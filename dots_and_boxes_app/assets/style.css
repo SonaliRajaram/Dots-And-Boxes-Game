@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#board {
+  display: grid;
+  justify-content: center;
+  margin: 20px auto;
+  grid-template-columns: repeat(9, 30px);
+  grid-template-rows: repeat(9, 30px);
+  gap: 4px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.line {
+  background: transparent;
+  cursor: pointer;
+}
+
+.line.horizontal {
+  width: 30px;
+  height: 5px;
+}
+
+.line.vertical {
+  width: 5px;
+  height: 30px;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player1 {
+  background: #FF6B6B;
+}
+
+.player2 {
+  background: #4ECDC4;
+}
+
+#reset {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#reset:hover {
+  background-color: #555;
+}
